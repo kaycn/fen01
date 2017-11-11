@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="./css/icono.min.css">
+	 <style>
+        #nav1{width:80px;height:50px;border:1px solid #D4CD49;color:black;position:fixed;left:40%;top:90%}
+        #top1{position:absolute;top:8%}
+        #top3{position:absolute;top:20%;left:20%}
+        #top2{position:absolute;top:38%;left:40%}
+		i.home{color:blue};
+    </style>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-home">
+    <div data-role="header" class="jqm-header">
+		<h2><img src="_assets/img/jquery-logo.png" alt="jQuery Mobile"></h2>
+		<p>Version <span class="jqm-version"></span></p>
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		
+	</div><!-- /header -->
+
+<div role="main" class="ui-content jqm-content">
+<p>To make a split list item, simply add a second link inside the <code>li</code>. To adjust the split button icon, add the <code>data-split-icon</code> attribute to the listview . Add the <code>data-icon</code> attribute to individual list items for more control. The theme swatch color of the split button defaults to "b" (blue in the default theme) but can be set by specifying a swatch letter with the <code>data-split-theme</code> attribute at the listview level or for individual splits with the <code>data-theme</code> attribute at the link level.</p>
+			<div data-demo-html="true">
+				<ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+					<li><a href="#">
+						<img src="">
+					<h2>Broken Bells</h2>
+					<p>Broken Bells</p></a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+					</li>
+					<li><a href="#">
+						<img src="">
+					<h2>Warning</h2>
+					<p>Hot Chip</p></a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+					</li>
+					<li><a href="#">
+						<img src="">
+					<h2>Wolfgang Amadeus Phoenix</h2>
+					<p>Phoenix</p></a>
+						<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+					</li>
+				</ul>
+
+				<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+					<h3>Purchase Album?</h3>
+				<p>Your download will begin immediately on your mobile device when you purchase.</p>
+					<a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Buy: $10.99</a>
+					<a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
+				</div>
+			</div><!--/demo-html -->
+
+</div>
+
+<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+
+	<div class="ui-grid-b" id="top1">
+    <div class="ui-block-a">    
+    <img  src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1510246936&di=4a0991bb6f640505bc7a8101a3d9b85b&src=http://scimg.jb51.net/allimg/150617/14-15061G51552620.jpg" width="100%">
+        
+        <div class="ui-block-b">
+    
+        
+        </div>
+    </div>
+    <div id="top2" class="ui-block-b">
+    <h3>kaycn</h3>
+    </div>
+    <div class="ui-block-c">
+    </div>
+    </div>
+	
+	<div id="top3">
+		<h4><span class="icono-home"></span>首页</h4>
+		<h4>订单</h4>
+		<h4>资料</h4>
+		<h4>金库</h4>
+	</div>
+
+</div><!-- /panel -->
+
+
+<button id="nav1">发布</button>
+</div>
+</body>
